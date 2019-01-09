@@ -1,0 +1,261 @@
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-pt'.
+/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/nlu/default/current/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             GET, OPTIONS, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, OPTIONS, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'ooi' with intent '{'name': 'saudacao', 'confidence': 0.7005115303294858}' and entities '[{'start': 0, 'end': 3, 'value': 'ooi', 'entity': 'birthdate', 'confidence': 0.5295583911656295, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 3 events
+Current slot values: 
+	birthdate: ooi
+Current tracker state [{}, {'slot_birthdate_0': 1.0, 'prev_action_listen': 1.0, 'intent_saudacao': 1.0, 'entity_birthdate': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_greet' with prob 0.29.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Olá, amigo!
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_birthdate_0': 1.0, 'prev_action_listen': 1.0, 'intent_saudacao': 1.0, 'entity_birthdate': 1.0}, {'slot_birthdate_0': 1.0, 'intent_saudacao': 1.0, 'entity_birthdate': 1.0, 'prev_utter_greet': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.41.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'oi' with intent '{'name': 'saudacao', 'confidence': 0.93516999600605}' and entities '[]'
+Logged UserUtterance - tracker now has 7 events
+Current slot values: 
+	birthdate: ooi
+Current tracker state [{'slot_birthdate_0': 1.0, 'intent_saudacao': 1.0, 'entity_birthdate': 1.0, 'prev_utter_greet': 1.0}, {'slot_birthdate_0': 1.0, 'prev_action_listen': 1.0, 'intent_saudacao': 1.0}]
+There is no memorised next action
+Action 'action_listen' was predicted after a user message using policy_1_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Current tracker state [{'slot_birthdate_0': 1.0, 'prev_action_listen': 1.0, 'intent_saudacao': 1.0, 'entity_birthdate': 1.0}, {'slot_birthdate_0': 1.0, 'intent_saudacao': 1.0, 'entity_birthdate': 1.0, 'prev_utter_greet': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.41.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-pt'.
+/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/nlu/default/current/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             GET, OPTIONS, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, OPTIONS, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'oi' with intent '{'name': 'saudacao', 'confidence': 0.9351324203781619}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	birthdate: None
+Current tracker state [{}, {'intent_saudacao': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '4'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Olá, amigo!
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_saudacao': 1.0, 'prev_action_listen': 1.0}, {'intent_saudacao': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_ask_birthdate' with prob 1.00.
+Calling action endpoint to run action 'action_ask_birthdate'.
+Failed to run custom action 'action_ask_birthdate'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f712cbd3400>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Encountered an exception while running action 'action_ask_birthdate'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/urllib3/util/connection.py", line 80, in create_connection
+    raise err
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/gustavo/anaconda3/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/gustavo/anaconda3/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/gustavo/anaconda3/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/gustavo/anaconda3/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/gustavo/anaconda3/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/urllib3/connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f712cbd3400>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f712cbd3400>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 311, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/rasa_core/utils.py", line 665, in request
+    **kwargs)
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f712cbd3400>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/rasa_core/processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 323, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_ask_birthdate' ended with events '[]'
+Current tracker state [{'intent_saudacao': 1.0, 'prev_utter_greet': 1.0}, {'intent_saudacao': 1.0, 'prev_action_ask_birthdate': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-pt'.
+/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/nlu/default/current/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'oi' with intent '{'name': 'saudacao', 'confidence': 0.9351324203781619}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	birthdate: None
+Current tracker state [{}, {'intent_saudacao': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '4'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Olá, amigo!
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_saudacao': 1.0, 'prev_action_listen': 1.0}, {'intent_saudacao': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_ask_birthdate' with prob 1.00.
+Calling action endpoint to run action 'action_ask_birthdate'.
+Action 'action_ask_birthdate' ended with events '[]'
+Bot utterance 'BotUttered(text: quando você nasceu?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_saudacao': 1.0, 'prev_utter_greet': 1.0}, {'intent_saudacao': 1.0, 'prev_action_ask_birthdate': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+/home/gustavo/GustavoUNB/pessoais/rasa_dockerintegration/env/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message '03/02/1999' with intent '{'name': 'inform_birthdate', 'confidence': 0.8032370152179357}' and entities '[{'start': 0, 'end': 10, 'value': '03/02/1999', 'entity': 'birthdate', 'confidence': 0.6640416940630924, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 9 events
+Current slot values: 
+	birthdate: 03/02/1999
+Current tracker state [{'intent_saudacao': 1.0, 'prev_action_ask_birthdate': 1.0}, {'intent_inform_birthdate': 1.0, 'entity_birthdate': 1.0, 'slot_birthdate_0': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Action 'action_listen' was predicted after a user message using policy_1_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Current tracker state [{'intent_saudacao': 1.0, 'prev_utter_greet': 1.0}, {'intent_saudacao': 1.0, 'prev_action_ask_birthdate': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'

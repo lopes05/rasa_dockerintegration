@@ -1,0 +1,22 @@
+slots:
+  birthdate: 
+    type: text
+
+intents:
+ - saudacao
+ - inform_birthdate
+
+entities:
+ - birthdate
+
+templates:
+  utter_greet:
+    - | 
+      Olá, amigo!
+  responder:
+    - Que legal.
+
+actions:
+  - action_ask_birthdate
+  - utter_greet
+  - responder

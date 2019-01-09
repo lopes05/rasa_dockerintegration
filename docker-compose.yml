@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+# ================================= Bot =====================================
+  bot:
+    build:
+      context: .
+      dockerfile: ./bot.Dockerfile
+    restart: unless-stopped
+    ports:
+      - 5005:5005
+      - 5000:5000
+      - 5002:5002
+      - 5055:5055
+    volumes:
+      - ./bot:/bot
+    container_name: rasa

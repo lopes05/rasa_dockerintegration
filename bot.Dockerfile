@@ -17,4 +17,4 @@ workdir /bot
 EXPOSE 5005
 EXPOSE 5002
 
-cmd make train-core - && make run-rest
+cmd make train-core - && make run-core
